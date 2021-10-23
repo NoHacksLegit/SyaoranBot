@@ -12,13 +12,13 @@ for (const file of archivosComandos) {
     client.commands.set(command.name, command)
 }
 client.once('ready', () => {
-
+    console.log('Syaoran Li iniciado.');
 })
 
 client.once('message', () => {
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
-    
+
     if (message.author.bot) return;
     if (!client.commands.has(command)) return message.channel.reply(':x: Ese comando no existe.');
 
