@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const prefix = "s!";
 const fs = require("fs")
-const { token } = config.json
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
