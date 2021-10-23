@@ -18,7 +18,8 @@ client.once('ready', () => {
 client.once('message', () => {
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const command = args.shift().toLowerCase();
-
+    
+    if (message.author.bot) return;
     if (!client.commands.has(command)) return message.channel.reply(':x: Ese comando no existe.');
 
     try {
