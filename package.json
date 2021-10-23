@@ -1,0 +1,25 @@
+{
+  "name": "syaoranbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoHacksLegit/SyaoranBot.git"
+  },
+  "keywords": [],
+  "author": "_JuanGFX_",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NoHacksLegit/SyaoranBot/issues"
+  },
+  "homepage": "https://github.com/NoHacksLegit/SyaoranBot#readme"
+}
