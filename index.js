@@ -29,5 +29,6 @@ client.once('message', () => {
         message.reply('Hubo un error ejecutando el comando.')
     }
 
-})
+});
+
 client.login(process.env.TOKEN)
