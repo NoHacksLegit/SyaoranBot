@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const prefix = "s!";
 const fs = require("fs")
-const env = require('dotenv').config()
+const { token } = config.json
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
@@ -14,6 +14,7 @@ for (const file of archivosComandos) {
 }
 client.once('ready', () => {
     console.log('Syaoran Li iniciado.');
+    client.user.setActivity('Maintance mode.', {type: 'WATCHING'});
 })
 
 client.once('message', () => {
@@ -32,4 +33,4 @@ client.once('message', () => {
 
 });
 
-client.login(env.TOKEN)
+client.login(process.env.TOKEN);  
